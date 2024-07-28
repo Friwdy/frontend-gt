@@ -1,0 +1,146 @@
+.header {
+    width: 1440px;
+    height: 192px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .logo {
+    width: 253px;
+    height: 44px;
+    position: absolute;
+    top: 42px;
+    left: 104px;
+
+  }
+  
+  .search-bar {
+    width: 559px;
+    height: 60px;
+    background-color: white;
+    color: #000000;
+    position: absolute;
+    top: 34px;
+    left: 384px;
+    border-radius: 8px;
+    border-color: #000000;
+    opacity: 4%;
+  }
+  
+  .btn-cadastrar {
+    width: 102px;
+    height: 28px;
+    color: #474747;
+    position: absolute;
+    top: 50px;
+    left: 991px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .btn-entrar {
+    width: 114px;
+    height: 40px;
+    background-color: #C92071;
+    color: white;
+    position: absolute;
+    top: 44px;
+    left: 1123px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #EE4266;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+  }
+  
+.btn-home {
+    width: 49px;
+    height: 24px;
+    top: 136px;
+    left: 100px;
+    color: #474747;
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+.btn-produtos {
+    width: 74px;
+    height: 28px;
+    top: 134px;
+    left: 181px;
+    color: #474747;
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-categorias {
+    width: 89px;
+    height: 28px;
+    top: 134px;
+    left: 287px;
+    color: #474747;
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-pedidos {
+    width: 115px;
+    height: 28px;
+    top: 134px;
+    left: 408px;
+    color: #474747;
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Estilo para a barra sob os botões ao serem clicados */
+
+.button-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #C92071;
+  border-radius: 2px;
+}
+
+.btn-home.active .button-bar {
+  width: 49px;
+  top: 161px;
+  left: 100px;
+}
+
+.btn-produtos.active .button-bar {
+  width: 74px;
+  top: 161px;
+  left: 225px;
+}
+
+.btn-categorias.active .button-bar {
+  width: 89px;
+  top: 161px;
+  left: 350px;
+}
+
+.btn-pedidos.active .button-bar {
+  width: 115px;
+  top: 161px;
+  left: 475px;
+}

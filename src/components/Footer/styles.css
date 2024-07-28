@@ -1,0 +1,81 @@
+/* footerStyles.css */
+.footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 40px 20px; /* Aumenta o padding para maior altura */
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha itens ao topo */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    height: 60px; /* Aumenta a altura do logo */
+    margin-bottom: 20px; /* Espaço abaixo do logo */
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap; /* Permite que as seções se ajustem em diferentes tamanhos de tela */
+}
+
+.footer-section {
+    margin: 0 20px;
+    flex: 1 1 200px; /* Ajusta a largura das seções */
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 20px; /* Espaço acima dos ícones sociais */
+}
+
+.footer-social a {
+    margin: 0 15px; /* Espaço entre os ícones sociais */
+}
+
+.footer-social img {
+    height: 40px; /* Aumenta a altura dos ícones sociais */
+    filter: brightness(0) invert(1); /* Faz os ícones serem brancos */
+}
+
+.footer-copyright {
+    margin-top: 30px; /* Espaço acima do copyright */
+    font-size: 14px;
+}
