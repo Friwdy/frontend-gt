@@ -4,44 +4,42 @@ import './styles.css';
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer-container">
-                <div className="footer-logo">
-                    <img src="logo.png" alt="Logo" />
-                </div>
-                <div className="footer-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quod laboriosam maxime harum architecto dolores est amet. Nesciunt omnis vero odio pariatur unde eligendi iure? Aliquam minima sit quam iure!</p>
-                </div>
-                <div className="footer-social">
-                    <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram" /></a>
-                    <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook" /></a>
-                    <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter" /></a>
-                </div>
-                <div className="footer-section">
-                    <h4>Informação</h4>
-                    <ul>
-                        <li><a href="#">Sobre Nós</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos de Serviço</a></li>
-                    </ul>
-                </div>
-                <div className="footer-section">
-                    <h4>Categorias</h4>
-                    <ul>
-                        <li><a href="#">Categoria 1</a></li>
-                        <li><a href="#">Categoria 2</a></li>
-                        <li><a href="#">Categoria 3</a></li>
-                    </ul>
-                </div>
-                <div className="footer-section">
-                    <div className="footer-section">
-                        <h4>Contato</h4>
-                        <p>Endereço: Rua Exemplo, 123</p>
-                        <p>Cidade, Estado, CEP</p>
+            <div className="container">
+                <ul>
+                    <h3>MRstudio</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <div className="redes-sociais">
+                        <img src="img/facebook.png" alt="facebook"/>
+                        <img src="img/instagram.png" alt="instagram"/>
+                        <img src="img/twitter.png" alt="twitter"/>
                     </div>
-                </div>
-            </div>
-            <div className="footer-copyright">
-                &copy; 2024 Todos os direitos reservados.
+                </ul>
+                <ul>
+                    <h3>Informação</h3>
+                    <li><a href="#">Sobre Drip Store</a></li>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Meus Pedidos</a></li>
+                </ul>
+                <ul>
+                <h3>Categorias</h3>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Calças</a></li>
+                    <li><a href="#">Bonés</a></li>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Tênis</a></li>
+                </ul>
+                <ul>
+                    <h3>Contato</h3>
+                    <li>
+                        <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
+                    </li>
+                    <li>
+                        <p>(85) 3051-3411</p>
+                    </li>
+                </ul>
             </div>
         </footer>
     );
