@@ -1,22 +1,32 @@
-import React from 'react'
+import React from 'react';
+import logo from '../../imagens/logo-header.png';
 import './styles.css';
 
 const Header = () => {
     return (
-        <header className="header">
-            <div className="logo"></div>
-            <div className="search-bar">
-                <input type="text" placeholder="Pesquisar produtos"/>
-                    </div>
-            <button className="btn-cadastrar">Cadastre-se</button>
-            <button className="btn-entrar">Entrar</button>
-            <div className="cart-icon"></div>
-            <button className="btn-home">Home</button>
-            <button className="btn-produtos">Produtos</button>
-            <button className="btn-categorias">Categorias</button>
-            <button className="btn-pedidos">Meus Pedidos</button>
-        </header>
+      <header className="header">
+        <div className="header-top">
+          <div className="logo">
+            <img src={logo} alt="Logo" />
+          </div>
+          <div className="account">
+            <a href="#" className="register-link">Cadastre-se</a>
+            <button>Entrar</button>
+            <a href="#" className="cart">
+              <img src="cart-icon.png" alt="Carrinho de Compras" />
+            </a>
+          </div>
+        </div>
+        <nav className="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="#">Meus Pedidos</a></li>
+          </ul>
+        </nav>
+      </header>
     );
-};
-
-export default Header;
+  };
+  
+  export default Header;
