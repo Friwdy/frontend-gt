@@ -1,15 +1,18 @@
 import React from 'react';
 import { Carousel, Card, Button } from 'react-bootstrap';
 import './styles.css';
-import image1 from '../../imagens/home-slide-6.jpeg';
-import image2 from '../../imagens/home-slide-6.jpeg';
-import image3 from '../../imagens/home-slide-6.jpeg';
-import image4 from '../../imagens/home-slide-6.jpeg';
-import iconShirt from '../../imagens/instagram.png';
-import iconPants from '../../imagens/instagram.png';
-import iconShorts from '../../imagens/instagram.png';
-import iconHeadphones from '../../imagens/instagram.png';
-import iconShoes from '../../imagens/instagram.png';
+import image1 from '../../imagens/home-slide-1.jpeg';
+import image2 from '../../imagens/home-slide-2.jpeg';
+import image3 from '../../imagens/home-slide-3.jpeg';
+import image4 from '../../imagens/home-slide-4.jpeg';
+import collection1 from '../../imagens/collection-1.png';
+import collection2 from '../../imagens/collection-2.png';
+import collection3 from '../../imagens/collection-3.png';
+import iconShirt from '../../imagens/camiseta.png';
+import iconPants from '../../imagens/calca.png';
+import iconShorts from '../../imagens/bone.png';
+import iconHeadphones from '../../imagens/headphones.png';
+import iconShoes from '../../imagens/tenis.png';
 
 const Home = () => {
   return (
@@ -36,21 +39,21 @@ const Home = () => {
 
       <div className="cards-section">
         <Card className="card-item">
-          <Card.Img variant="top" src={image1} />
+          <Card.Img variant="top" src={collection1} />
           <Card.Body>
             <Card.Title>Card 1</Card.Title>
             <Card.Text>Descrição do Card 1</Card.Text>
           </Card.Body>
         </Card>
         <Card className="card-item">
-          <Card.Img variant="top" src={image2} />
+          <Card.Img variant="top" src={collection2} />
           <Card.Body>
             <Card.Title>Card 2</Card.Title>
             <Card.Text>Descrição do Card 2</Card.Text>
           </Card.Body>
         </Card>
         <Card className="card-item">
-          <Card.Img variant="top" src={image3} />
+          <Card.Img variant="top" src={collection3} />
           <Card.Body>
             <Card.Title>Card 3</Card.Title>
             <Card.Text>Descrição do Card 3</Card.Text>

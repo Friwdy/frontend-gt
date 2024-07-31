@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../imagens/logo-header.png';
+import miniCart from '../../imagens/mini-cart.png';
 import './styles.css';
 
 const Header = () => {
@@ -13,7 +14,7 @@ const Header = () => {
             <a href="#" className="register-link">Cadastre-se</a>
             <button>Entrar</button>
             <a href="#" className="cart">
-              <img src="cart-icon.png" alt="Carrinho de Compras" />
+              <img src={miniCart} alt="Carrinho de Compras" />
             </a>
           </div>
         </div>
