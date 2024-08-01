@@ -41,22 +41,22 @@ const Home = () => {
         <Card className="card-item">
           <Card.Img variant="top" src={collection1} />
           <Card.Body>
-            <Card.Title>Card 1</Card.Title>
-            <Card.Text>Descrição do Card 1</Card.Text>
+            <Button className="off1">30% OFF</Button>
+            <Button className="comprar1">Comprar</Button>
           </Card.Body>
         </Card>
         <Card className="card-item">
           <Card.Img variant="top" src={collection2} />
           <Card.Body>
-            <Card.Title>Card 2</Card.Title>
-            <Card.Text>Descrição do Card 2</Card.Text>
+            <Button className="off2">30% OFF</Button>
+            <Button className="comprar2">Comprar</Button>
           </Card.Body>
         </Card>
         <Card className="card-item">
           <Card.Img variant="top" src={collection3} />
           <Card.Body>
-            <Card.Title>Card 3</Card.Title>
-            <Card.Text>Descrição do Card 3</Card.Text>
+            <Button className="off3">30% OFF</Button>
+            <Button className="comprar3">Comprar</Button>
           </Card.Body>
         </Card>
       </div>

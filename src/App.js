@@ -1,16 +1,23 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Homepages/Homepage";
-import './App.css'
+import ProductListingPage from "./pages/ProductListingPage/ProductListingPage";
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/produtos" element={<ProductListingPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

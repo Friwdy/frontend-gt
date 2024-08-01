@@ -33,12 +33,19 @@ body {
 }
 
 .logo img {
-  height: 40px;
+  width: 253px;
+  height: 44px;
+  top: 42px;
+  left: 104px;
 }
 
 .menu {
   text-align: center;
   margin-top: 10px;
+  width: 423px;
+  height: 29px;
+  top: 134px;
+  left: 100px;
 }
 
 .menu ul {
@@ -122,6 +129,10 @@ body {
   color: var(--white);
   border-radius: 4px;
   cursor: pointer;
+  width: 114px;
+  height: 40px;
+  top: 44px;
+  left: 1123px;
 }
 
 .account button:hover {
@@ -129,5 +140,8 @@ body {
 }
 
 .cart img {
-  height: 24px;
+  width: 33px;
+  height: 29px;
+  top: 47px;
+  left: 1307px;
 }
