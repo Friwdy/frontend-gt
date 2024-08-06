@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './styles.css'; // Estilos personalizados
+import tenis1 from '../../imagens/product-thumb-1.jpeg';
+import tenis2 from '../../imagens/product-thumb-2.jpeg';
+import tenis3 from '../../imagens/product-thumb-3.jpeg';
+import tenis4 from '../../imagens/product-thumb-4.jpeg';
+import tenis5 from '../../imagens/product-thumb-5.jpeg';
 
 const ProductViewPage = () => {
   const [selectedSize, setSelectedSize] = useState(null);
@@ -20,18 +25,14 @@ const ProductViewPage = () => {
     <div className="product-detail">
       <div className="image-section">
         <div className="main-image">
-          {/* Coloque o caminho da imagem principal */}
-          <img src="path/to/main-image.jpg" alt="Produto" />
+          <img src={tenis1} alt="Produto" />
         </div>
         <div className="thumbnail-container">
-          {Array.from({ length: 5 }, (_, index) => (
-            <img
-              key={index}
-              src={`path/to/thumb${index + 1}.jpg`}
-              alt={`Thumbnail ${index + 1}`}
-              className="thumbnail"
-            />
-          ))}
+          <img className="thumbnail" src={tenis1} alt="Produto" />
+          <img className="thumbnail" src={tenis2} alt="Produto" />
+          <img className="thumbnail" src={tenis3} alt="Produto" />
+          <img className="thumbnail" src={tenis4} alt="Produto" />
+          <img className="thumbnail" src={tenis5} alt="Produto" />
         </div>
       </div>
       <div className="details-section">
@@ -80,6 +81,22 @@ const ProductViewPage = () => {
           </div>
         </div>
         <button className="buy-button">Comprar</button>
+      </div>
+      {/* Seção de produtos relacionados */}
+      <div className="related-products">
+        <h2>Produtos Relacionados</h2>
+        <div className="cards-container">
+          {[tenis1, tenis2, tenis3, tenis4].map((imgSrc, index) => (
+            <div className="card" key={index}>
+              <img src={imgSrc} alt={`Produto ${index + 1}`} className="card-image" />
+              <div className="card-content">
+                <h3 className="card-title">Produto {index + 1}</h3>
+                <p className="card-price">R$ 150,00</p>
+                <button className="card-button">Ver Detalhes</button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
