@@ -1,7 +1,6 @@
 /* Estilo da página de detalhes do produto */
 .product-detail {
   display: flex;
-  justify-content: space-between; /* Distribui o espaço entre os itens */
   padding: 20px;
 }
 
@@ -10,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px; /* Espaçamento à direita para separar da seção de detalhes */
 }
 
 .main-image img {
@@ -25,22 +25,20 @@
 }
 
 .thumbnail {
-  width: 117.81px;  /* Ajustado para 117.81px */
+  width: 117.81px; /* Ajustado para 117.81px */
   height: 96px;
   cursor: pointer;
   object-fit: cover;
-  transition: border 0.3s ease;  /* Transição suave para a borda */
+  transition: border 0.3s ease; /* Transição suave para a borda */
   border: 2px solid transparent; /* Inicialmente sem borda visível */
 }
 
 .thumbnail:hover {
-  border: 2px solid #ff007f;  /* Adiciona a borda colorida no hover */
+  border: 2px solid #ff007f; /* Adiciona a borda colorida no hover */
 }
 
 .details-section {
-  flex: 1;
-  padding-left: 20px;
-  align-self: flex-start; /* Alinha ao topo do contêiner flex */
+  flex: 2; /* Ocupa mais espaço em relação à seção de imagem */
 }
 
 .product-title {
@@ -132,8 +130,10 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
+  margin-bottom: 40px; /* Espaçamento abaixo do botão de compra para a seção de produtos relacionados */
 }
 
+/* Estilo para a seção de produtos relacionados */
 .related-products {
   margin: 0 auto; /* Centraliza a seção de produtos relacionados */
   padding: 20px; /* Adiciona um pouco de espaçamento interno */
@@ -142,8 +142,6 @@
 .related-products h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  width: 286px;
-  height: 38px;
   text-align: center; /* Centraliza o título */
 }
 

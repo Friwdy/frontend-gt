@@ -1,3 +1,5 @@
+/* Header.css */
+
 :root {
   --primary: #C92071;
   --secondary: #B5B6F2;
@@ -22,30 +24,33 @@ body {
 .header {
   background-color: var(--white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: var(--primary);
+  color: var(--dark-gray);
   padding: 10px 20px;
+  position: relative;
 }
 
-.header-top {
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .logo img {
   width: 253px;
   height: 44px;
-  top: 42px;
-  left: 104px;
+  margin-bottom: 10px;
 }
 
 .menu {
-  text-align: center;
-  margin-top: 10px;
-  width: 423px;
-  height: 29px;
-  top: 134px;
-  left: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
 .menu ul {
@@ -53,7 +58,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
 }
 
 .menu ul li {
@@ -62,86 +66,96 @@ body {
 
 .menu ul li a {
   text-decoration: none;
-  color: var(--light-gray-2); /* Cor inicial dos links */
+  color: var(--dark-gray);
   font-weight: bold;
-  position: relative; /* Para o sublinhado */
+  position: relative;
+  padding: 5px 0;
 }
 
 .menu ul li a::after {
   content: '';
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
+  width: 0;
   height: 2px;
   bottom: -2px;
   left: 0;
   background-color: var(--primary);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: width 0.3s;
 }
 
 .menu ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  width: 49px;
 }
 
 .menu ul li a:hover {
   color: var(--primary);
 }
 
-.search input {
-  padding: 5px 10px;
-  border: 1px solid var(--light-gray-2);
-  border-radius: 4px;
+.search-container {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 20px;
 }
 
-.account {
+.search-bar {
+  width: 559px;
+  height: 60px;
+  padding: 0 50px 0 20px;
+  border: 1px solid var(--light-gray-2);
+  border-radius: 30px;
+  font-size: 16px;
+  color: var(--dark-gray);
+  box-sizing: border-box;
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.right-side {
   display: flex;
   align-items: center;
 }
 
-.account .register-link {
+.register-link {
   text-decoration: none;
-  color: var(--light-gray-2); /* Cor inicial do link */
+  color: var(--dark-gray);
   margin-right: 10px;
   font-weight: bold;
-  position: relative; /* Para o sublinhado fixo */
 }
 
-.account .register-link::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: var(--primary);
-}
-
-.account .register-link:hover {
+.register-link:hover {
   color: var(--primary);
 }
 
-.account button {
+.login-button {
   padding: 5px 10px;
   border: none;
   background-color: var(--primary);
   color: var(--white);
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   width: 114px;
   height: 40px;
-  top: 44px;
-  left: 1123px;
+  margin-right: 10px;
 }
 
-.account button:hover {
+.login-button:hover {
   background-color: var(--tertiary);
 }
 
 .cart img {
   width: 33px;
   height: 29px;
-  top: 47px;
-  left: 1307px;
 }
