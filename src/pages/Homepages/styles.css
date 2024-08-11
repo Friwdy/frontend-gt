@@ -2,58 +2,217 @@
     padding: 20px;
 }
 
+.carousel {
+    position: relative;
+}
+
 .carousel .carousel-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
+    width: auto;
+    max-width: 600px; /* Ajuste se necessário */
 }
 
-.carousel .carousel-caption p {
+.carousel-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.carousel .carousel-caption p.caption-text {
     margin: 0;
     font-size: 1.2em;
+    width: 280px;
+    height: 24px;
+    text-align: left;
 }
 
-.carousel .carousel-caption h3 {
+.carousel .carousel-caption h3.caption-title {
     margin: 10px 0;
     font-size: 2em;
     font-weight: bold;
+    width: 510px;
+    height: 132px;
+    text-align: left;
 }
 
-.carousel .carousel-caption button {
+.carousel .carousel-caption p.caption-description {
+    margin: 10px 0;
+    font-size: 1em;
+    width: 495px;
+    height: 68px;
+    text-align: left;
+}
+
+.carousel .carousel-caption button.caption-button {
     background-color: var(--primary);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    width: 220px;
+    height: 48px;
+    text-align: left;
 }
 
-.carousel .carousel-caption button:hover {
+.carousel .carousel-caption button.caption-button:hover {
     background-color: var(--tertiary);
 }
 
-.cards-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+.carousel .right-align {
+    object-fit: cover;
 }
 
-.card-item {
-    width: 30%;
+
+.highlight-collections {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    height: 20px;
+    text-align: left;
+}
+
+.cards-section {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+    height: 251px;
+    left: 490px;
+    width: 1000px;
+    position: relative;
+}
+
+.card-item .off1 {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 96px;
+    height: 32px;
+    background-color: #E7FF86;
+    color: #474747;
+}
+
+.card-item .comprar1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 153px;
+    height: 48px;
+    background-color: #fcfcfc;
+    color: #C92071;
+}
+
+.card-item .off2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96px;
+    height: 32px;
+}
+
+.card-item .comprar2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 153px;
+    height: 48px;
+}
+
+.card-item .off3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96px;
+    height: 32px;
+}
+
+.card-item .comprar3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 153px;
+    height: 48px;
+}
+
+.card-item1 {
+    
+    position: relative;
+    width: 405px;
+    height: 251px;
+    right: 450px;
+    
+    
+}
+
+.card-item2 {
+   
+    position: relative;
+    width: 405px;
+    height: 251px;
+    right: 120px;
+    
+}
+
+.card-item3 {
+  
+    position: relative;
+    width: 405px;
+    height: 251px;
+    right: -230px;
+    
+}
+
+.text {
+
 }
 
 .icons-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza os itens horizontalmente */
     margin: 20px 0;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
 }
 
 .icon-item {
     text-align: center;
+    position: relative; /* Necessário para posicionar o círculo atrás do ícone */
+    margin: 0 50px; /* Ajuste a distância entre os itens */
+}
+
+.icon-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px; /* Tamanho do círculo */
+    height: 100px; /* Tamanho do círculo */
+    background-color: rgb(228, 216, 221); /* Cor do círculo com opacidade */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Coloca o círculo atrás do ícone */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .icon-item img {
     width: 50px;
     height: 50px;
+    transition: color 0.3s ease; /* Adiciona transição suave para a cor */
+}
+
+.icon-item:hover::before {
+    opacity: 1; /* Mostra o círculo ao passar o mouse */
+}
+
+.icon-item:hover img {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(1000%) hue-rotate(-40deg) brightness(80%) contrast(90%); /* Ajusta a cor do ícone para C92071 */
 }
 
 .more-cards-section .card-row {
@@ -64,4 +223,46 @@
 
 .more-cards-section .card-item {
     width: 22%;
+    position: relative; /* Necessário para posicionar o botão */
+}
+
+.discount-button {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+    background-color: rgb(253, 253, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    z-index: 1; /* Garante que o botão esteja acima do conteúdo do card */
+}
+
+.product-name {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.product-model {
+    text-align: left;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.price {
+    text-align: left;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.old-price {
+    color: gray;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-weight: bold;
 }

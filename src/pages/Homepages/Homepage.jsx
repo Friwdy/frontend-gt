@@ -19,48 +19,103 @@ const Home = () => {
     <div className="home">
       <Carousel className="carousel">
         <Carousel.Item>
-          <img className="d-block w-100" src={image1} alt="First slide" />
-          <Carousel.Caption>
-            <p>Melhores ofertas personalizadas</p>
-            <h3>Queima de estoque Nike</h3>
-            <Button variant="primary">Ver Ofertas</Button>
-          </Carousel.Caption>
+          <div className="carousel-content">
+            <Carousel.Caption>
+              <p className="caption-text">
+                Melhores ofertas personalizadas
+              </p>
+              <h3 className="caption-title">
+                Queima de estoque Nike
+              </h3>
+              <p className="caption-description">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur
+              </p>
+              <Button className="caption-button" variant="primary">Ver Ofertas</Button>
+            </Carousel.Caption>
+          </div>
+          <img className="d-block w-100 right-align" src={image1} alt="First slide" />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={image2} alt="Second slide" />
+          <div className="carousel-content">
+            <Carousel.Caption>
+              <p className="caption-text">
+                Outras ofertas personalizadas
+              </p>
+              <h3 className="caption-title">
+                Promoções de verão
+              </h3>
+              <p className="caption-description">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur
+              </p>
+              <Button className="caption-button" variant="primary">Ver Ofertas</Button>
+            </Carousel.Caption>
+          </div>
+          <img className="d-block w-100 right-align" src={image2} alt="Second slide" />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={image3} alt="Third slide" />
+          <div className="carousel-content">
+            <Carousel.Caption>
+              <p className="caption-text">
+                Produtos em destaque
+              </p>
+              <h3 className="caption-title">
+                Novidades da estação
+              </h3>
+              <p className="caption-description">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur
+              </p>
+              <Button className="caption-button" variant="primary">Ver Ofertas</Button>
+            </Carousel.Caption>
+          </div>
+          <img className="d-block w-100 right-align" src={image3} alt="Third slide" />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={image4} alt="Fourth slide" />
+          <div className="carousel-content">
+            <Carousel.Caption>
+              <p className="caption-text">
+                Novidades incríveis
+              </p>
+              <h3 className="caption-title">
+                Lançamentos exclusivos
+              </h3>
+              <p className="caption-description">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur
+              </p>
+              <Button className="caption-button" variant="primary">Ver Ofertas</Button>
+            </Carousel.Caption>
+          </div>
+          <img className="d-block w-100 right-align" src={image4} alt="Fourth slide" />
         </Carousel.Item>
       </Carousel>
-
+      <div>
+        <p className="highlight-collections">Coleções em destaque</p>
+      </div>
       <div className="cards-section">
-        <Card className="card-item">
-          <Card.Img variant="top" src={collection1} />
-          <Card.Body>
+        <div className="card-item1">
+        <img src={collection1} alt="Logo" />
+          <div>
             <Button className="off1">30% OFF</Button>
             <Button className="comprar1">Comprar</Button>
-          </Card.Body>
-        </Card>
-        <Card className="card-item">
-          <Card.Img variant="top" src={collection2} />
-          <Card.Body>
-            <Button className="off2">30% OFF</Button>
-            <Button className="comprar2">Comprar</Button>
-          </Card.Body>
-        </Card>
-        <Card className="card-item">
-          <Card.Img variant="top" src={collection3} />
-          <Card.Body>
-            <Button className="off3">30% OFF</Button>
-            <Button className="comprar3">Comprar</Button>
-          </Card.Body>
-        </Card>
+          </div>
+        </div>
+        <div className="card-item2">
+        <img src={collection2} alt="Logo" />
+          <div>
+            <Button className="off1">30% OFF</Button>
+            <Button className="comprar1">Comprar</Button>
+          </div>
+        </div>
+        <div className="card-item3">
+        <img src={collection3} alt="Logo" />
+          <div>
+            <Button className="off1">30% OFF</Button>
+            <Button className="comprar1">Comprar</Button>
+          </div>
+        </div>
       </div>
-
+      <div className="text">
+        <p>Coleções em destaque</p>
+      </div>
       <div className="icons-section">
         <div className="icon-item">
           <img src={iconShirt} alt="Camisa" />
@@ -85,67 +140,108 @@ const Home = () => {
       </div>
 
       <div className="more-cards-section">
-        <div className="card-row">
-          <Card className="card-item">
-            <Card.Img variant="top" src={image1} />
-            <Card.Body>
-              <Card.Title>Card 4</Card.Title>
-              <Card.Text>Descrição do Card 4</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card-item">
-            <Card.Img variant="top" src={image2} />
-            <Card.Body>
-              <Card.Title>Card 5</Card.Title>
-              <Card.Text>Descrição do Card 5</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card-item">
-            <Card.Img variant="top" src={image3} />
-            <Card.Body>
-              <Card.Title>Card 6</Card.Title>
-              <Card.Text>Descrição do Card 6</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card-item">
-            <Card.Img variant="top" src={image4} />
-            <Card.Body>
-              <Card.Title>Card 7</Card.Title>
-              <Card.Text>Descrição do Card 7</Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
-        <div className="card-row">
-          <Card className="card-item">
-            <Card.Img variant="top" src={image1} />
-            <Card.Body>
-              <Card.Title>Card 8</Card.Title>
-              <Card.Text>Descrição do Card 8</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card-item">
-            <Card.Img variant="top" src={image2} />
-            <Card.Body>
-              <Card.Title>Card 9</Card.Title>
-              <Card.Text>Descrição do Card 9</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card-item">
-            <Card.Img variant="top" src={image3} />
-            <Card.Body>
-              <Card.Title>Card 10</Card.Title>
-              <Card.Text>Descrição do Card 10</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card-item">
-            <Card.Img variant="top" src={image4} />
-            <Card.Body>
-              <Card.Title>Card 11</Card.Title>
-              <Card.Text>Descrição do Card 11</Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
-      </div>
+  <div className="card-row">
+    <Card className="card-item">
+      <Card.Img variant="top" src={image1} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+    <Card className="card-item">
+      <Card.Img variant="top" src={image2} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+    <Card className="card-item">
+      <Card.Img variant="top" src={image3} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+    <Card className="card-item">
+      <Card.Img variant="top" src={image4} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+  </div>
+  <div className="card-row">
+    <Card className="card-item">
+      <Card.Img variant="top" src={image1} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+    <Card className="card-item">
+      <Card.Img variant="top" src={image2} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+    <Card className="card-item">
+      <Card.Img variant="top" src={image3} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+    <Card className="card-item">
+      <Card.Img variant="top" src={image4} />
+      <Card.Body>
+        <Button className="discount-button">30% OFF</Button>
+        <p className="product-name">Tênis</p>
+        <p className="product-model">K-Swiss V8 - Masculino</p>
+        <p className="price">
+          <span className="old-price">$200</span>
+          <span className="new-price">$100</span>
+        </p>
+      </Card.Body>
+    </Card>
+  </div>
+</div>
+
     </div>
   );
 };
