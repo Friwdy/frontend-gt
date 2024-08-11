@@ -1,6 +1,14 @@
-/* Estilo da página de detalhes do produto */
+/* Estilo geral da página */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que a página ocupe pelo menos a altura total da tela */
+}
+
+/* Estilo da seção de detalhes do produto */
 .product-detail {
   display: flex;
+  flex: 1; /* Faz a seção ocupar o espaço restante disponível */
   padding: 20px;
 }
 
@@ -76,6 +84,7 @@
 }
 
 .description {
+  text-align: left;
   margin: 10px 0;
 }
 
@@ -84,6 +93,7 @@
 }
 
 .size-label, .color-label {
+  text-align: left;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -123,6 +133,7 @@
 }
 
 .buy-button {
+  text-align: left;
   background-color: #ffcc00;
   color: #000;
   border: none;
@@ -135,8 +146,7 @@
 
 /* Estilo para a seção de produtos relacionados */
 .related-products {
-  margin: 0 auto; /* Centraliza a seção de produtos relacionados */
-  padding: 20px; /* Adiciona um pouco de espaçamento interno */
+  padding: 20px;
 }
 
 .related-products h2 {
@@ -183,6 +193,7 @@
 }
 
 .card-button {
+  text-align: left;
   background-color: #ff007f;
   color: #fff;
   border: none;

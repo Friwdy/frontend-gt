@@ -268,10 +268,11 @@
 }
 
 .offer-container {
+    padding: auto;
+    padding-bottom: auto;
     display: flex;
     align-items: flex-start;
-    height: calc(50vh - 50px); /* Altura da div como metade da altura da tela menos o padding */
-    padding-bottom: 20px; /* Padding inferior para não ultrapassar o footer */
+    height: 1440; 
     box-sizing: border-box; /* Inclui o padding na altura total */
 }
 
@@ -284,7 +285,7 @@
 }
 
 .image-container img {
-    padding: 20px;
+    padding: -20px;
     height: 100%; /* A imagem preencherá a altura do contêiner */
     width: 514px; /* Mantém a proporção da imagem */
     border-radius: 50%; /* Faz a imagem circular */
