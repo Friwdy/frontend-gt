@@ -4,7 +4,8 @@
 }
 
 .logo-footer {
-    text-align: left; /* Alinha a logo à esquerda */
+    text-align: left;
+    /* Alinha a logo à esquerda */
 }
 
 .logo-footer img {
@@ -12,7 +13,7 @@
     width: 253px;
     height: 44px;
     margin-bottom: 10px;
-  }
+}
 
 .container {
     display: flex;
@@ -21,9 +22,9 @@
 
 .footer .container ul {
     width: 25%;
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer .container h3 {
@@ -40,15 +41,15 @@
     height: 20px;
 }
 
-.footer .container ul > p {
+.footer .container ul>p {
     margin-bottom: 40px;
     text-align: left;
 }
 
 .footer .container li {
     margin: 10px 0;
-    
-    
+
+
 }
 
 .footer .container a {
@@ -57,17 +58,24 @@
 }
 
 .footer-divider {
-    width: 1240px; /* Comprimento da barra */
-    height: 1px; /* Altura da barra */
-    background-color: white; /* Cor da barra */
-    margin: 0 auto; /* Centraliza a barra horizontalmente */
-    margin-top: 30px; /* Espaço acima da barra */
+    width: 1240px;
+    /* Comprimento da barra */
+    height: 1px;
+    /* Altura da barra */
+    background-color: white;
+    /* Cor da barra */
+    margin: 0 auto;
+    /* Centraliza a barra horizontalmente */
+    margin-top: 30px;
+    /* Espaço acima da barra */
 }
 
 .footer-copyright {
     padding: 15px;
     color: white;
-    margin-top: 10px; /* Espaço acima do texto de copyright */
+    margin-top: 10px;
+    /* Espaço acima do texto de copyright */
     font-size: 14px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
 }

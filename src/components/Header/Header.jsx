@@ -23,10 +23,10 @@ const Header = () => {
           </nav>
         </div>
         <div className="search-container">
-          <input 
-            type="text" 
-            placeholder="Pesquisar produtos" 
-            className="search-bar" 
+          <input
+            type="text"
+            placeholder="Pesquisar produtos"
+            className="search-bar"
           />
           <button className="search-button">
             <img src={lupa} alt="Lupa" className="search-icon" />

@@ -2,13 +2,15 @@
 .product-page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que a página ocupe pelo menos a altura total da tela */
+  min-height: 100vh;
+  /* Garante que a página ocupe pelo menos a altura total da tela */
 }
 
 /* Estilo da seção de detalhes do produto */
 .product-detail {
   display: flex;
-  flex: 1; /* Faz a seção ocupar o espaço restante disponível */
+  flex: 1;
+  /* Faz a seção ocupar o espaço restante disponível */
   padding: 20px;
 }
 
@@ -17,7 +19,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px; /* Espaçamento à direita para separar da seção de detalhes */
+  margin-right: 20px;
+  /* Espaçamento à direita para separar da seção de detalhes */
 }
 
 .main-image img {
@@ -33,20 +36,25 @@
 }
 
 .thumbnail {
-  width: 117.81px; /* Ajustado para 117.81px */
+  width: 117.81px;
+  /* Ajustado para 117.81px */
   height: 96px;
   cursor: pointer;
   object-fit: cover;
-  transition: border 0.3s ease; /* Transição suave para a borda */
-  border: 2px solid transparent; /* Inicialmente sem borda visível */
+  transition: border 0.3s ease;
+  /* Transição suave para a borda */
+  border: 2px solid transparent;
+  /* Inicialmente sem borda visível */
 }
 
 .thumbnail:hover {
-  border: 2px solid #ff007f; /* Adiciona a borda colorida no hover */
+  border: 2px solid #ff007f;
+  /* Adiciona a borda colorida no hover */
 }
 
 .details-section {
-  flex: 2; /* Ocupa mais espaço em relação à seção de imagem */
+  flex: 2;
+  /* Ocupa mais espaço em relação à seção de imagem */
 }
 
 .product-title {
@@ -88,17 +96,20 @@
   margin: 10px 0;
 }
 
-.size-selection, .color-selection {
+.size-selection,
+.color-selection {
   margin: 20px 0;
 }
 
-.size-label, .color-label {
+.size-label,
+.color-label {
   text-align: left;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.size-options, .color-options {
+.size-options,
+.color-options {
   display: flex;
   gap: 10px;
 }
@@ -141,7 +152,8 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-bottom: 40px; /* Espaçamento abaixo do botão de compra para a seção de produtos relacionados */
+  margin-bottom: 40px;
+  /* Espaçamento abaixo do botão de compra para a seção de produtos relacionados */
 }
 
 /* Estilo para a seção de produtos relacionados */
@@ -152,14 +164,16 @@
 .related-products h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  text-align: center; /* Centraliza o título */
+  text-align: center;
+  /* Centraliza o título */
 }
 
 .cards-container {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  flex-wrap: wrap; /* Permite a quebra de linha se necessário */
+  flex-wrap: wrap;
+  /* Permite a quebra de linha se necessário */
 }
 
 .card {
@@ -169,7 +183,8 @@
   overflow: hidden;
   text-align: center;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra leve */
 }
 
 .card-image {
