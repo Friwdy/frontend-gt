@@ -13,6 +13,7 @@ import iconPants from '../../imagens/calca.png';
 import iconShorts from '../../imagens/bone.png';
 import iconHeadphones from '../../imagens/headphones.png';
 import iconShoes from '../../imagens/tenis.png';
+import image5 from '../../imagens/produc-image-5.jpeg';
 
 const Home = () => {
   return (
@@ -92,21 +93,21 @@ const Home = () => {
       </div>
       <div className="cards-section">
         <div className="card-item1">
-        <img src={collection1} alt="Logo" />
+          <img src={collection1} alt="Logo" />
           <div>
             <Button className="off1">30% OFF</Button>
             <Button className="comprar1">Comprar</Button>
           </div>
         </div>
         <div className="card-item2">
-        <img src={collection2} alt="Logo" />
+          <img src={collection2} alt="Logo" />
           <div>
             <Button className="off1">30% OFF</Button>
             <Button className="comprar1">Comprar</Button>
           </div>
         </div>
         <div className="card-item3">
-        <img src={collection3} alt="Logo" />
+          <img src={collection3} alt="Logo" />
           <div>
             <Button className="off1">30% OFF</Button>
             <Button className="comprar1">Comprar</Button>
@@ -140,108 +141,118 @@ const Home = () => {
       </div>
 
       <div className="more-cards-section">
-  <div className="card-row">
-    <Card className="card-item">
-      <Card.Img variant="top" src={image1} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-    <Card className="card-item">
-      <Card.Img variant="top" src={image2} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-    <Card className="card-item">
-      <Card.Img variant="top" src={image3} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-    <Card className="card-item">
-      <Card.Img variant="top" src={image4} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-  </div>
-  <div className="card-row">
-    <Card className="card-item">
-      <Card.Img variant="top" src={image1} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-    <Card className="card-item">
-      <Card.Img variant="top" src={image2} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-    <Card className="card-item">
-      <Card.Img variant="top" src={image3} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-    <Card className="card-item">
-      <Card.Img variant="top" src={image4} />
-      <Card.Body>
-        <Button className="discount-button">30% OFF</Button>
-        <p className="product-name">Tênis</p>
-        <p className="product-model">K-Swiss V8 - Masculino</p>
-        <p className="price">
-          <span className="old-price">$200</span>
-          <span className="new-price">$100</span>
-        </p>
-      </Card.Body>
-    </Card>
-  </div>
-</div>
-
+        <div className="card-row">
+          <Card className="card-item">
+            <Card.Img variant="top" src={image1} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+          <Card className="card-item">
+            <Card.Img variant="top" src={image2} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+          <Card className="card-item">
+            <Card.Img variant="top" src={image3} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+          <Card className="card-item">
+            <Card.Img variant="top" src={image4} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="card-row">
+          <Card className="card-item">
+            <Card.Img variant="top" src={image1} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+          <Card className="card-item">
+            <Card.Img variant="top" src={image2} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+          <Card className="card-item">
+            <Card.Img variant="top" src={image3} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+          <Card className="card-item">
+            <Card.Img variant="top" src={image4} />
+            <Card.Body>
+              <Button className="discount-button">30% OFF</Button>
+              <p className="product-name">Tênis</p>
+              <p className="product-model">K-Swiss V8 - Masculino</p>
+              <p className="price">
+                <span className="old-price">$200</span>
+                <span className="new-price">$100</span>
+              </p>
+            </Card.Body>
+          </Card>
+        </div>
+      </div>
+      <div className="offer-container">
+        <div className="image-container">
+          <img src={image5} alt="Oferta Especial" />
+        </div>
+        <div className="text-container">
+          <p className="offer-heading">Oferta Especial</p>
+          <p className="product-name">Air Jordan Edição de Colecionador</p>
+          <p className="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          <button className="offer-button">Ver Ofertas</button>
+        </div>
+      </div>
     </div>
   );
 };
