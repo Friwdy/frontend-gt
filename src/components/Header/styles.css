@@ -109,13 +109,15 @@ body {
 }
 
 .search-button {
-  position: absolute;
+
+  position: center;
   top: 50%;
   right: 20px;
-  transform: translateY(-50%);
+  transform: translateX(-120%);
   background: transparent;
   border: none;
   cursor: pointer;
+  color: #474747;
 }
 
 .search-icon {
