@@ -3,6 +3,17 @@
     background-color: black;
 }
 
+.logo-footer {
+    text-align: left; /* Alinha a logo à esquerda */
+}
+
+.logo-footer img {
+    margin-top: 60px;
+    width: 253px;
+    height: 44px;
+    margin-bottom: 10px;
+  }
+
 .container {
     display: flex;
     color: white;
@@ -10,25 +21,53 @@
 
 .footer .container ul {
     width: 25%;
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .footer .container h3 {
+    margin-top: 60px;
     margin-bottom: 16px;
     font-weight: 600;
 }
 
-.footer .container .redes-socias img {
-    margin-right: 10px;
+
+
+.footer .container .redes-sociais img {
+    margin-right: 25px;
+    width: 15px;
+    height: 20px;
 }
 
 .footer .container ul > p {
     margin-bottom: 40px;
+    text-align: left;
 }
 
 .footer .container li {
     margin: 10px 0;
+    
+    
 }
 
 .footer .container a {
     color: white;
+    text-decoration: none;
+}
+
+.footer-divider {
+    width: 1240px; /* Comprimento da barra */
+    height: 1px; /* Altura da barra */
+    background-color: white; /* Cor da barra */
+    margin: 0 auto; /* Centraliza a barra horizontalmente */
+    margin-top: 30px; /* Espaço acima da barra */
+}
+
+.footer-copyright {
+    padding: 15px;
+    color: white;
+    margin-top: 10px; /* Espaço acima do texto de copyright */
+    font-size: 14px;
+    text-align: center; /* Centraliza o texto */
 }
